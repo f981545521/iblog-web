@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>关键字输入提示</title>
+<style type="text/css">
+*{
+    margin:0px;
+    padding:0px;
+}
+body, button, input, select, textarea {
+    font: 12px/16px Verdana, Helvetica, Arial, sans-serif;
+}
+#container {
+   min-width:603px;
+   min-height:767px;
+}
+</style>
+<script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&libraries=place"></script>
+<script>
+
+function init(){
+
+ var map = new qq.maps.Map(document.getElementById("container"),{
+        center:  new qq.maps.LatLng(39.916527,116.397128),
+        zoom: 13
+    });
+    //实例化自动完成
+    var ap = new qq.maps.place.Autocomplete(document.getElementById('place'));
+    //调用Poi检索类。用于进行本地检索、周边检索等服务。
+    var searchService = new qq.maps.SearchService({
+        map : map
+    });
+    //添加监听事件
+    qq.maps.event.addListener(ap, "confirm", function(res){
+        searchService.search(res.value);
+    });
+}
+</script>
+</head>
+<body onload="init()">
+<div>
+<div id="container"></div>
+<p style="margin:5px">
+    <input style="width:200px;padding:3px 4px;" type="text" id="place" /> 输入地址，自动完成<br><br>
+    库引用方法：<br>
+    &lt;script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&<span style="color:red">libraries=place</span>"&lt;/script&gt;
+</p>
+</body>
+</html>
