@@ -25,7 +25,6 @@ XPath 是一门在 XML 文档中查找信息的语言。XPath 可用来在 XML �
 <table style="border-collapse: collapse" border="0">
 <tbody valign="top">
 <thead>
-<tr style="height: 18px">
 <td style="width: 168px;border-right: black 0.5pt solid; padding-right: 7px; border-top: black 0.5pt solid; padding-left: 7px; border-left: black 0.5pt solid; border-bottom: black 0.5pt solid">
 	<div><span style="font-size: 9pt; color: black"><strong>运算符/特殊字符</strong></span></div>
 </td>
@@ -33,7 +32,6 @@ XPath 是一门在 XML 文档中查找信息的语言。XPath 可用来在 XML �
 	<div><span style="font-size: 9pt; color: black"><strong>说明</strong></span></div>
 </td>
 </thead>
-</tr>
 <tr style="height: 18px">
 <td style="border-right: black 0.5pt solid; padding-right: 7px; border-top: medium none; padding-left: 7px; border-left: black 0.5pt solid; border-bottom: black 0.5pt solid">
 	<div><span style="font-size: 9pt; color: black">/ </span></div>
