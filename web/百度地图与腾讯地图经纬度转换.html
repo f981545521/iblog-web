@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+		<script>
+			$(function() {
+
+//31.98789,118.750782
+				var point = {
+					'lat': 31.98789,
+					'lng': 118.750782
+				};
+				console.log(point);
+
+				jQuery.MapConvert.Convert_BD09_To_GCJ02(point);
+				
+				console.log(point);
+
+			});
+
+			jQuery.MapConvert = {
+				x_pi: 3.14159265358979324 * 3000.0 / 180.0,
+				/// <summary>
+				/// 中国正常坐标系GCJ02协议的坐标，转到 百度地图对应的 BD09 协议坐标
+				///  point 为传入的对象，例如{lat:xxxxx,lng:xxxxx}
+				/// </summary>
+				Convert_GCJ02_To_BD09: function(point) {
+					var x = point.lng,
+						y = point.lat;
+					var z = Math.sqrt(x * x + y * y) + 0.00002 * Math.sin(y * jQuery.MapConvert.x_pi);
+					var theta = Math.atan2(y, x) + 0.000003 * Math.cos(x * jQuery.MapConvert.x_pi);
+					point.lng = z * Math.cos(theta) + 0.0065;
+					point.lat = z * Math.sin(theta) + 0.006;
+				},
+				/// <summary>
+				/// 百度地图对应的 BD09 协议坐标，转到 中国正常坐标系GCJ02协议的坐标
+				/// </summary>
+				Convert_BD09_To_GCJ02: function(point) {
+					var x = point.lng - 0.0065,
+						y = point.lat - 0.006;
+					var z = Math.sqrt(x * x + y * y) - 0.00002 * Math.sin(y * jQuery.MapConvert.x_pi);
+					var theta = Math.atan2(y, x) - 0.000003 * Math.cos(x * jQuery.MapConvert.x_pi);
+					point.lng = z * Math.cos(theta);
+					point.lat = z * Math.sin(theta);
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+	</body>
+
+</html>
