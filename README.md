@@ -12,3 +12,9 @@
 <span>htmlpreview.github.io/</span>
 
 [亲自试一试](http://htmlpreview.github.io/?https://github.com/f981545521/tencent_Map/blob/master/鼠标移动获取中心坐标.html)
+
+### 百度地图
+
+[百度地图坐标拾取](http://api.map.baidu.com/lbsapi/getpoint/index.html)
+
+[百度地图坐标转换](http://lbsyun.baidu.com/jsdemo.htm#a5_1)
