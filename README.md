@@ -15,6 +15,6 @@
 
 ### 百度地图
 
-[百度地图坐标拾取](http://api.map.baidu.com/lbsapi/getpoint/index.html)
+1. [百度地图坐标拾取](http://api.map.baidu.com/lbsapi/getpoint/index.html)
 
-[百度地图坐标转换](http://lbsyun.baidu.com/jsdemo.htm#a5_1)
+2. [百度地图坐标转换](http://lbsyun.baidu.com/jsdemo.htm#a5_1)
