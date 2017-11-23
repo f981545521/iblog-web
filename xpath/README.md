@@ -4,9 +4,9 @@
 
 XPath 是一门在 XML 文档中查找信息的语言。XPath 可用来在 XML 文档中对元素和属性进行遍历。
 
-[w3school参考手册](http://www.w3school.com.cn/xpath/index.asp)
+- [w3school参考手册](http://www.w3school.com.cn/xpath/index.asp)
 <br/>
-[XPath 详解,总结](https://www.cnblogs.com/fdszlzl/archive/2009/06/02/1494836.html)
+- [XPath 详解，总结](https://www.cnblogs.com/fdszlzl/archive/2009/06/02/1494836.html)
 
 ### 基本语法
 
