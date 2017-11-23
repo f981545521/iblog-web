@@ -23,8 +23,8 @@ XPath 是一门在 XML 文档中查找信息的语言。XPath 可用来在 XML �
 ### 详细说明：
 <table style="border-collapse: collapse" border="0">
 <thead>
-<td style="width: 40%;border-right: black 0.5pt solid; padding-right: 7px; border-top: black 0.5pt solid; padding-left: 7px; border-left: black 0.5pt solid; border-bottom: black 0.5pt solid">
-	<div><span style="font-size: 9pt; color: black"><strong>运算符/特殊字符</strong></span></div>
+<td style="width: 40%">
+	<div><strong>运算符/特殊字符</strong></div>
 </td>
 <td style="border-right: black 0.5pt solid; padding-right: 7px; border-top: black 0.5pt solid; padding-left: 7px; border-left: medium none; border-bottom: black 0.5pt solid">
 	<div><span style="font-size: 9pt; color: black"><strong>说明</strong></span></div>
