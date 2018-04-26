@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+		<script type="text/javascript">
+			function postit() {
+				$.ajax({
+					type: "post",
+					url: "http://127.0.0.1:8079/f6-insurance/insurance/employeed",
+					async: true,
+					data: {
+						'id': 12,
+						'name': '刘备',
+						'age': 43
+					},
+					success: function(data) {
+						console.log(data);
+					}
+				});
+			}
+
+			/**附件上传*/
+			function ajaxUpload() {
+				var file = $('#fileupload')[0].files[0];
+				//创建内存中的表单对象
+				var form = new FormData();
+				//向表单对象中添加向服务器传输的数据；
+				form.append('userfile', file);
+				$.ajax({
+					url: 'http://127.0.0.1:8078/f6-insurance/insurance/uploadPicToInsurance',
+					data: form,
+					type: 'post',
+					dataType: 'json',
+					contentType: false,
+					processData: false,
+					success: function(obj) {
+						console.log(obj);
+					}
+
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<button type="button" onclick="postit();">POST</button>
+
+		<form enctype="multipart/form-data" action="" method=post>
+			<h4>请选择文件：</h4>
+			<input name="userfile" id="fileupload" type="file"><br/>
+
+			<input type="button" class="btn btn-success" id="upload" onclick="ajaxUpload();" value="上传">
+		</form>
+	</body>
+
+</html>

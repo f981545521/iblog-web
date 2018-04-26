@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div class="nbw-bitm bdwb bds2 bdc0 ">
+			<div class="multicntwrap">
+				<div class="multicnt">
+					<div>
+						<h3 class="title pre fs1"><span class="tcnt">URL中#号(井号)的作用</span>&nbsp;&nbsp;<span class="bgc0 fc07 fw0 fs0"></span></h3>
+						<p class="tdep clearfix nbw-act fc06" style="line-height:20px;">
+							<span class="pleft">
+		          
+		          <span class="blogsep">2012-01-09 13:36:41</span><span class="blogsep">|&nbsp;&nbsp;分类：</span>
+							<a class="fc03 m2a" href="http://blog.163.com/seo_luofeng/blog/#m=0&amp;t=1&amp;c=fks_084066083085084066084083086095085081087070083083086065080" title="seo技术研究">seo技术研究</a>
+							<span class="blogsep" id="$_blogTagTitle">|&nbsp;&nbsp;标签：</span><span class="fc03" id="$_blogTagInfo"><a href="http://blog.163.com/seo_luofeng/blog/#m=0&amp;t=3&amp;c=#号" class="fc03 m2a">#号</a>&nbsp;&nbsp;<a href="http://blog.163.com/seo_luofeng/blog/#m=0&amp;t=3&amp;c=url标记" class="fc03 m2a">url标记</a>&nbsp;&nbsp;<a href="http://blog.163.com/seo_luofeng/blog/#m=0&amp;t=3&amp;c=区分流量" class="fc03 m2a">区分流量</a>&nbsp;&nbsp;</span>
+							</span>
+							<span class="pright fc07 ztag"><span class="blogsep">|</span><span id="$_spanReport" class="fc03 m2a">举报</span></span>
+							<span class="pright fc07 ztag"><span class="blogsep">|</span><span class="zihao fc03" id="$_fontswitch">字号<span class="zihaoshow  phide" id="$_fontsTypes"><span class="zihaoc bdc0"><span class="stag"></span><span class="fc04 stag">大</span><span class="fc04 stag">中</span><span class="fc04 stag">小</span></span>
+							</span>
+							</span>
+							</span><span class="pright pnt fc03" id="$_blog_subscribe"><span class="iblock icn0 icn0-919">&nbsp;</span>
+							<a class="m2a">订阅</a>
+							</span>
+						</p>
+					</div>
+				</div>
+
+				<div class="m-shareAndDownLoad">
+					<div class="share-wrap pleft">
+						<span id="$_shareBtn_lofter2" title="分享到LOFTER" class="shareitm lofter f-bkicons">&nbsp;</span>
+						<span id="$_shareBtn_sinaweibo2" title="分享到新浪微博" class="shareitm sinawb f-bkicons">&nbsp;</span>
+						<span id="$_shareBtn_qq2" title="分享到QQ空间" class="shareitm qqzone f-bkicons">&nbsp;</span>
+						<span id="$_shareBtn_qqweibo2" title="分享到腾讯微博" class="shareitm qqweibo f-bkicons">&nbsp;</span>
+						<div id="$_shareBtn_weixin2" title="分享到微信" class="shareitm weixin f-bkicons">
+							<div class="code2dimlayer fc06">
+								<img src="http://blog.163.com/bitMaxImageGen.do?url=http://blog.163.com/seo_luofeng/blog/static/17657502420120913641444&amp;w=100&amp;h=100&amp;act=qbbkfxtj_20150420_05">
+								<div class="tips">
+									<p>用微信&nbsp;&nbsp;“扫一扫”</p>
+									<p>将文章分享到朋友圈。</p>
+								</div>
+								<a class="close">&nbsp;</a>
+							</div>
+						</div>
+						<div id="$_shareBtn_yixin2" title="分享到易信" class="shareitm yixin f-bkicons">
+							<div class="code2dimlayer fc06">
+								<img src="http://blog.163.com/bitMaxImageGen.do?url=http://blog.163.com/seo_luofeng/blog/static/17657502420120913641444&amp;w=100&amp;h=100&amp;act=qbbkfxtj_20150420_06">
+								<div class="tips">
+									<p>用易信&nbsp;&nbsp;“扫一扫”</p>
+									<p>将文章分享到朋友圈。</p>
+								</div>
+								<a class="close">&nbsp;</a>
+							</div>
+						</div>
+					</div>
+					<a class="pright fc03 noul" target="_blank" href="http://www.lofter.com/app?act=qbbkrzydb_20150408_01">&nbsp;&nbsp;下载LOFTER</a>
+					<a class="pright fc03 noul" target="_blank" href="http://yxp.163.com">我的照片书&nbsp;&nbsp;|</a>
+				</div>
+
+			</div>
+
+			<div>
+
+			</div>
+
+			<div class="nbw-blog-start"></div>
+			<div class="bct fc05 fc11 nbw-blog ztag">
+				<p>今天又看到了一篇非常好的来自HTTPWatch的文章，不得不推荐给大家。</p>
+				<a name="im1"><strong>1. 井号在URL中指定的是页面中的一个位置</strong></a>
+				<p>井号作为页面定位符出现在URL中，比如：<em>http://www.httpwatch.com/features.htm#print</em> ，此URL表示在页面features.htm中print的位置。浏览器读取这个URL后，会自动将print位置滚动至可视区域。</p>
+				<p><img alt="" src="http://www.biaodianfu.com/wp-content/uploads/2011/03/url2.png" height="170" width="485"></p>
+				<p>在页面上添加锚点的方法为：&lt;a name=”print”&gt;&lt;/a&gt;或使用&lt;div id=”print” &gt;。</p>
+				<a name="im2"><strong>2.井号后面的数据不会发送到HTTP请求中</strong></a>
+				<p>当时使用类似HttpWatch工具时，你是无法在Http请求中找到井号后面的参数的，原因是井号后面的参数是针对浏览器起作用的而不是服务器端。</p>
+				<p>
+					<a rel="nofollow" href="http://www.biaodianfu.com/wp-content/uploads/2011/03/nosendfragment.png"><img alt="" src="http://www.biaodianfu.com/wp-content/uploads/2011/03/nosendfragment.png" height="477" width="585"></a>
+				</p>
+				<a name="im3"><strong>3. 任务位于井号后面的字符都是位置标识符</strong></a>
+				<p>不管第一个井号后面跟的是什么参数，只要是在井号后面的参数一律看成是位置标识符。</p>
+				<p>比如这样一个链接（<em>http://example.com/?color=#ffff&amp;amp;shape=circle</em>），后面跟的参数是颜色和形状，但是服务器却并不能理解URL中的含义。服务器接收到的只是：</p>
+				<p><img alt="" src="http://www.biaodianfu.com/wp-content/uploads/2011/03/querystring.png" height="279" width="567"></p>
+				<a name="im4"><strong>4. 改变井号后面的参数不会触发页面的重新加载但是会留下一个历史记录</strong></a>
+				<p>仅改变井号后面的内容，只会使浏览器滚动到相应的位置，并不会重现加载页面。</p>
+				<p>比如从<em>http://www.httpwatch.com/features.htm#filter</em>到<em>http://www.httpwatch.com/features.htm#print</em>，浏览器并不会去重新请求页面，但是此操作会在浏览器的历史记录中添加一次记录，即你可以通过返回按钮回答上次的位置。这个特性对Ajax来说特别的有用，可以通过设置不同井号值，来表示不同的访问状态，并返回不同的内容给用户。（注：在IE6和IE7下井号的改变不会增加历史记录。）</p>
+				<a name="im5"><strong>5、可以通过javascript使用window.location.hash来改变井号后面的值</strong></p>
+				<p>window.location.hash这个属性可以对URL中的井号参数进行修改，基于这个原理，我们可以在不重载页面的前提下创造一天新的访问记录。如标记框架页面当前的页面：</p>
+				<p><img alt="" src="http://www.biaodianfu.com/wp-content/uploads/2011/03/fragmentframe.png" height="341" width="530"></p>
+				<p>除此之外，HTML 5新增的onhashchange事件，当#值发生变化时，就会触发这个事件。</p>
+				<a name="im6"><strong>6. Googlebot对井号的过滤机制</strong></a>
+				<p>默认情况下Google在索引页面的时候会忽略井号后面的参数，同时也不会去执行页面中的javascript。然而谷歌为了支持对Ajax生成内容的索引，定义了如果在URL中使用“#!”，则Google会自动将其后面的内容转成查询字符串_escaped_fragment_的值。</p>
+				<p>比如最新的twitter URL：<em>http://twitter.com/#!/username</em>，Google会自动请求<em>http://twitter.com/?_escaped_fragment_=/username</em>来获取Ajax内容。</p>
+				<p><br></p>
+				<p><b><font color="#ff00ff">另外可以用#结合?等元素来标记流量来源,比如区分竞价和自然流量等,这个就很给力了.</font></b><br></p>
+			</div>
+			<div class="nbw-blog-end"></div>
+
+			<div>
+			</div>
+
+			<div>
+			</div>
+
+			<div>
+				<div>
+					<script type="text/javascript" id="wumiiRelatedItems"></script>
+				</div>
+			</div>
+
+			<div class="ptc ztag phide">
+				<span class="ptcp">
+            <span class="iblock bcmimg">&nbsp;</span>
+				<span class="nbc-0 nbc-0-40 ptcmt ptcmt-2">评论这张</span>
+				</span>
+			</div>
+			<div style="display:none" class="ptc phide ztag">
+				<span class="ptcp">
+            <span class="nbc-0 nbc-0-40 ptcmi">
+              <img src="http://b.bst.126.net/newpage/images/microblog.png?1">
+            </span>
+				<span class="nbc-0 nbc-0-40 ptcmt">转发至微博</span>
+				</span>
+			</div>
+			<div class="ptc phide" style="left: 10px; top: 1107px;">
+				<a id="publishtolofter" class="toLofter" title="发布到LOFTER" target="_blank" hidefocus="true" href="http://www.lofter.com/sharephoto/?act=qbblogpost_20131023_02&amp;from=blogpost&amp;image=http%3A%2F%2Fwww.biaodianfu.com%2Fwp-content%2Fuploads%2F2011%2F03%2Fnosendfragment.png&amp;thirdId=fks_087067082081081074082095087070072087086069081081083067086082&amp;source=%E8%90%BD%E6%9E%ABloven&amp;sourceurl=http%3A%2F%2Fblog.163.com%2Fseo_luofeng%2Fblog%2Fstatic%2F17657502420120913641444%2F">&nbsp;</a>
+			</div>
+
+			<div style="display:none" class="ptc phide ztag">
+				<span class="ptcp">
+            <span class="nbc-0 nbc-0-40 ptcmi">
+              <img src="http://b.bst.126.net/newpage/images/microblog.png?1">
+            </span>
+				<span class="nbc-0 nbc-0-40 ptcmt">转发至微博</span>
+				</span>
+			</div>
+
+			<div style="width:290px;" class="phide"><iframe id="$_mblogcardf" allowtransparency="true" frameborder="0" scrolling="no" width="100%" height="133"></iframe></div>
+
+			<div class="nbw-act tbar fc03 clearfix">
+
+				<div class="editopbar" style="height:32px;line-height:32px;text-align:left;">
+					<span class="fc07">阅读(<span id="$_spaniReadCount">17264</span>)</span><span class="sep fc07">|</span>
+					<span class="fc07">评论(<span id="$_spaniCommentCount">2</span>)</span>
+				</div>
+
+				<div style="height:40px;line-height:40px;">
+					<div class="pleft rdif">
+						<span style="display:none" class="pleft sep sep-last fc07">|</span>
+						<div class="share-wrap pleft">
+							<span id="$_shareBtn_lofter" title="分享到LOFTER" class="shareitm lofter f-bkicons">&nbsp;</span>
+							<span id="$_shareBtn_sinaweibo" title="分享到新浪微博" class="shareitm sinawb f-bkicons">&nbsp;</span>
+							<span id="$_shareBtn_qq" title="分享到QQ空间" class="shareitm qqzone f-bkicons">&nbsp;</span>
+							<span id="$_shareBtn_qqweibo" title="分享到腾讯微博" class="shareitm qqweibo f-bkicons">&nbsp;</span>
+							<div id="$_shareBtn_weixin" title="分享到微信" class="shareitm weixin f-bkicons">
+								<div class="code2dimlayer fc06">
+									<img src="http://blog.163.com/bitMaxImageGen.do?url=http://blog.163.com/seo_luofeng/blog/static/17657502420120913641444&amp;w=100&amp;h=100&amp;act=qbbkfxtj_20150420_11">
+									<div class="tips">
+										<p>用微信&nbsp;&nbsp;“扫一扫”</p>
+										<p>将文章分享到朋友圈。</p>
+									</div>
+									<a class="close">&nbsp;</a>
+								</div>
+							</div>
+							<div id="$_shareBtn_yixin" title="分享到易信" class="shareitm yixin f-bkicons">
+								<div class="code2dimlayer fc06">
+									<img src="http://blog.163.com/bitMaxImageGen.do?url=http://blog.163.com/seo_luofeng/blog/static/17657502420120913641444&amp;w=100&amp;h=100&amp;act=qbbkfxtj_20150420_12">
+									<div class="tips">
+										<p>用易信&nbsp;&nbsp;“扫一扫”</p>
+										<p>将文章分享到朋友圈。</p>
+									</div>
+									<a class="close">&nbsp;</a>
+								</div>
+							</div>
+						</div>
+
+						<form style="display:none" id="shareToLofterForm" method="post" target="_blank" action="http://www.lofter.com/sharetext?act=qbblogpost_20131023_04">
+							<input type="hidden" name="thirdId" value="fks_087067082081081074082095087070072087086069081081083067086082">
+							<input type="hidden" name="from" value="BLOGPOST">
+							<input type="hidden" name="title" value="URL中#号(井号)的作用">
+							<input type="hidden" name="content" value="<p>今天又看到了一篇非常好的来自HTTPWatch的文章，不得不推荐给大家。</p> <p><strong>1. 井号在URL中指定的是页面中的一个位置</strong></p> <p>井号作为页面定位符出现在URL中，比如：<em>http://www.httpwatch.com/features.htm#print</em>  ，此URL表示在页面features.htm中print的位置。浏览器读取这个URL后，会自动将print位置滚动至可视区域。</p> <p><img title=&quot;url2&quot;  alt=&quot;&quot;  src=&quot;http://www.biaodianfu.com/wp-content/uploads/2011/03/url2.png&quot;  height=&quot;170&quot;  width=&quot;485&quot;  ></p> <p>在页面上添加锚点的方法为：&amp;lt;a name=”print”&amp;gt;&amp;lt;/a&amp;gt;或使用&amp;lt;div id=”print” &amp;gt;。</p> <p><strong>2.井号后面的数据不会发送到HTTP请求中</strong></p> <p>当时使用类似HttpWatch工具时，你是无法在Http请求中找到井号后面的参数的，原因是井号后面的参数是针对浏览器起作用的而不是服务器端。</p> <p><a rel=&quot;nofollow&quot; href=&quot;http://www.biaodianfu.com/wp-content/uploads/2011/03/nosendfragment.png&quot;  ><img title=&quot;nosendfragment&quot;  alt=&quot;&quot;  src=&quot;http://www.biaodianfu.com/wp-content/uploads/2011/03/nosendfragment.png&quot;  height=&quot;477&quot;  width=&quot;585&quot;  ></a></p> <p><strong>3. 任务位于井号后面的字符都是位置标识符</strong></p> <p>不管第一个井号后面跟的是什么参数，只要是在井号后面的参数一律看成是位置标识符。</p> <p>比如这样一个链接（<em>http://example.com/?color=#ffff&amp;amp;amp;shape=circle</em>），后面跟的参数是颜色和形状，但是服务器却并不能理解URL中的含义。服务器接收到的只是：</p> <p><img title=&quot;querystring&quot;  alt=&quot;&quot;  src=&quot;http://www.biaodianfu.com/wp-content/uploads/2011/03/querystring.png&quot;  height=&quot;279&quot;  width=&quot;567&quot;  ></p> <p><strong>4. 改变井号后面的参数不会触发页面的重新加载但是会留下一个历史记录</strong></p> <p>仅改变井号后面的内容，只会使浏览器滚动到相应的位置，并不会重现加载页面。</p> <p>比如从<em>http://www.httpwatch.com/features.htm#filter</em>到<em>http://www.httpwatch.com/features.htm#print</em>，浏览器并不会去重新请求页面，但是此操作会在浏览器的历史记录中添加一次记录，即你可以通过返回按钮回答上次的位置。这个特性对Ajax来说特别的有用，可以通过设置不同井号值，来表示不同的访问状态，并返回不同的内容给用户。（注：在IE6和IE7下井号的改变不会增加历史记录。）</p> <p><strong>5、可以通过javascript使用window.location.hash来改变井号后面的值</strong></p> <p>window.location.hash这个属性可以对URL中的井号参数进行修改，基于这个原理，我们可以在不重载页面的前提下创造一天新的访问记录。如标记框架页面当前的页面：</p> <p><img title=&quot;fragmentframe&quot;  alt=&quot;&quot;  src=&quot;http://www.biaodianfu.com/wp-content/uploads/2011/03/fragmentframe.png&quot;  height=&quot;341&quot;  width=&quot;530&quot;  ></p> <p>除此之外，HTML 5新增的onhashchange事件，当#值发生变化时，就会触发这个事件。</p> <p><strong>6. Googlebot对井号的过滤机制</strong></p> <p>默认情况下Google在索引页面的时候会忽略井号后面的参数，同时也不会去执行页面中的javascript。然而谷歌为了支持对Ajax生成内容的索引，定义了如果在URL中使用“#!”，则Google会自动将其后面的内容转成查询字符串_escaped_fragment_的值。</p> <p>比如最新的twitter  URL：<em>http://twitter.com/#!/username</em>，Google会自动请求<em>http://twitter.com/?_escaped_fragment_=/username</em>来获取Ajax内容。</p><p><br></p><p><b><font color=&quot;#ff00ff&quot;  >另外可以用#结合?等元素来标记流量来源,比如区分竞价和自然流量等,这个就很给力了.</font></b><br></p>">
+							<input type="hidden" name="source" value="落枫loven">
+							<input type="hidden" name="sourceUrl" value="http://blog.163.com/seo_luofeng/blog/static/17657502420120913641444">
+							<input type="hidden" name="tag" value="#号,url标记,区分流量">
+						</form>
+
+					</div>
+					<div class="pright rightoperatebar rightoperatebar-new">
+						<span style="display:none" class="f-myLikeIcons likebtn pnt pright" id="$_spanLike">喜欢</span>
+						<span class="f-myLikeIcons recommendbtn pnt pright" id="$_spanRecommend">推荐</span>
+						<span style="display:none" id="$_spanShowRecommend" class="pleft rdct ">
+	            <span class="pleft ul fc03"><span id="$_spanRecommendCount">1</span>人</span><span class="pleft iblock icn0 icn0-722 nbw-tgl1 nas-icn0fix">&nbsp;</span><span class="pleft iblock icn0 icn0-621 nbw-tgl0 nas-icn0fix">&nbsp;</span><span class="fc07"></span>|&nbsp;
+						</span>
+						<span class="f-myLikeIcons reblogbtn pnt pright" id="$_spanCite">转载</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
